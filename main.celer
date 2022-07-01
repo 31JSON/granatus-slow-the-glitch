@@ -830,6 +830,7 @@ _route:
         comment: ゴーゴートカゲ
         coord: [3440.33, 236.07, 2079.44]
     - Get blue flame:
+        notes: put square bomb down in front of you; press Y; FAST press B -> (left dpad); unequip shield; pick up bomb; throw bomb
         movements:
           - to: [3441.5,1975.7583829011273]
           - to: [3469.5,1918.4852788077742]
@@ -1731,6 +1732,9 @@ _route:
           - to: [2769.6875,349.125]
             away: true
     - _Korok::N06
+    - Gale + Glide to Z43:
+        coord: [2957.5,533]
+        notes: Should make it to the wall and make it in time to climb up before the rain starts.
 
   - Ruta:
     - _Korok::Z43
@@ -2436,7 +2440,8 @@ _route:
 
   - Hyrule Castle:
     - _Warp::Tower::Woodland
-    - _Korok::K30
+    - _Korok::K30:
+        line-color: rgb(0, 255, 0)
     - _Chest::Special<Dinraal Scale>:
         comment: オルドラのウロコ
         coord: [-196.5625,-1218.4375]
@@ -2454,14 +2459,18 @@ _route:
     - _Discover<Princess Zelda's Room>:
         comment: ゼルダの部屋
         coord: [-320,-996.125]
-    - Save on bridge
+    - Save on bridge:
+        icon: link
+        coord: [-254.125,-1102.25]
     - Destory Ganon:
-        coord: [-254.375,-1063.1875]
+        icon: ganon
+        hide-icon-on-map: true
     - _Chest::Special<Naydra Scale>:
         comment: ネルドラのウロコ
         coord: [-182.5625,-1169.4375]
     - _Korok::X02
-    - _Korok::X11
+    - _Korok::X11:
+        line-color: rgb(0, 128, 0)
     - _Boss::Talus::Rare:
         comment: イワロック（希少）
         coord: [-136.8125,-956.125]
@@ -2478,17 +2487,25 @@ _route:
     - _Discover<King's Study>:
         comment: 王の書斎
         coord: [-172.1875,-1120.4375]
+    - _Equipment::Shield<Royal Guard's Shield>:
+        comment: 近衛の盾
+        coord: [-175.05, 171.07, -1123.92]
     - Enter Docks
     - _Shrine::SaasKosah:
         comment: サス・コサの祠
     - _Chest<Star Fragment>:
         comment: 星のかけら
         coord: [-223.9375,-1177.75]
-    - _Korok::X01
+    - _Equipment::Weapon<Great Flameblade>:
+        comment: 火炎の大剣
+        coord: [-268.24, 131.34, -1153.31]
+    - _Korok::X01:
+        line-color: rgb(0, 255, 0)
     - _Korok::X04
     - Enter Lockup
     - _Equipment::Weapon<Royal Guard's Claymore>:
         comment: 近衛の両手剣
+        line-color: rgb(0, 128, 0)
         coord: [-414.875,-1087.875]
         notes: In cell with eye
     - _Equipment::Weapon<Blizzard Rod>:
@@ -2499,6 +2516,9 @@ _route:
         coord: [-491.375,-1009.6875]
     - .fury():
         fury: 3
+    - _Equipment::Weapon<Great Thunderblade>:
+        comment: 雷電の大剣
+        hide-icon-on-map: true
     - _Equipment::Shield<Hylian Shield>:
         comment: ハイリアの盾
         coord: [-501.5,-1011.4375]
@@ -2511,7 +2531,8 @@ _route:
     - _Chest::Special<Naydra Fang>:
         comment: ネルドラの牙のかけら
         coord: [-356,-810.3125]
-    - _Korok::X18
+    - _Korok::X18:
+        line-color: rgb(0, 255, 0)
     - _Korok::X17
     - _Discover<First Gatehouse>:
         comment: 三の丸
@@ -2524,10 +2545,12 @@ _route:
         coord: [-154.6875,-893.375]
     - _Discover<Dining Hall>:
         comment: 食堂
+        line-color: rgb(0, 128,0)
         coord: [-116.375,-837.6875]
         notes: Raw meat, rushroom, raw gourmet meat
     - _Korok::X15
-    - _Korok::X20
+    - _Korok::X20:
+        line-color: rgb(0, 255, 0)
     - _Korok::X23
     - _Discover<Observation Room>:
         comment: 展望室
@@ -3459,10 +3482,12 @@ _route:
         coord: [2868.375,-68.375]
     - _Npc::ZoraFemale<Finley/フィネ>:
         comment: Special Delivery/メッセージボトルの行方
+        notes: After she throws it in the river, destory it by shooting it with an arrow.
         movements:
           - to: [2754.00, 189.53, -83.50]
     - _Korok::Z23
     - Pick up letter and continue:
+        notes: Along the way, you will need to kill the ocotoroks, lizalfos and any Yiga that spawn.
         movements:
           - to: [2750.5625,-90.125]
           - to: [2736.125,-106.6875]
@@ -3867,15 +3892,19 @@ _route:
     - _Npc::Rito<Kotts/コッツ>:
         comment: Recital at Warbler's Nest/リトの兄弟岩
         coord: [-3488.88, 258.52, -1850.25]
+        notes: Yellow sister at the pond with the hearty salmon
     - _Npc::Rito<Fyson/ペーダ>:
         comment: From the Ground Up/羽ばたけ！サクラダ工務店
         coord: [-3600.5,-1814.375]
+        notes: Send to Tarrey Town; wear a shirt
     - _Npc::SheikaMale<Jogo/ジョウゴ>:
         comment: The Spark of Romance/新郎の汚名返上
         coord: [-3605,-1852.4375]
+        notes: In the inn. Needs a flint.
     - _Npc::Rito<Cree/グリグリ>:
         comment: Recital at Warbler's Nest/リトの兄弟岩
         coord: [-3637.58, 289.95, -1815.48]
+        notes: Blue sister in the shop.
     - _Cook<Salmon Meunière>:
         comment: サーモンムニエル
         notes: Salmon, Wheat, Butter
@@ -3883,24 +3912,30 @@ _route:
     - _Npc::Rito<Genli/ゲンコ>:
         comment: Recital at Warbler's Nest/リトの兄弟岩
         coord: [-3608.76, 296.75, -1797.82]
+        notes: Green sister by the cooking pot.
     - _Npc::Rito<Molli/モモ>:
         comment: The Bird in the Mountains/おっきなお山のおっきな木
         coord: [-3618,-1797.4375]
+        notes: Pink girl on the ledge.
     - _Npc::Rito<Amali/ハミラ>:
         comment: Find Kheel/キールを探して！
         coord: [-3668.9375,-1769.875]
+        notes: Standing on platform next to shrine.
     - _Korok::T14:
-        notes: Shoot with Ancient Bow and bomb arrow
+        notes: Shoot with Ancient Bow and bomb arrow from the backside of the shrine.
     - _Npc::Rito<Bedoli/ベラ>:
         comment: The Ancient Rito Song/
         coord: [-3632.60, 320.12, -1793.79]
+        notes: On Revali's Landing.
     - _Npc::SheikaFemale<Juney/ジュノー>:
         comment: The Apple of My Eye/新妻は花よりダンゴ
         coord: [-3611.75,-1849]
+        notes: On the ledge between Kaneli's and Saki's houses.
     - _Korok::T10
     - _Npc::Rito<Notts/ナン>:
         comment: Recital at Warbler's Nest/リトの兄弟岩
         coord: [-3633.80, 352.95, -1792.05]
+        notes: Glide to back toward the central spire, and the pink sister will spawn in.
     - _Korok::T17
     - _Boss::Hinox::Black:
         comment: 黒ヒノックス
