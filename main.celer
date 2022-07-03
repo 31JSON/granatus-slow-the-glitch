@@ -117,6 +117,7 @@ _route:
         comment: ピリ辛薬
     - _Material<Flint>:
         comment: 火打ち石
+        notes: Needed to make fire for Farosh farming.
         coord: [-954.90, 194.30, 1833.20]
     - _Material<Bird Egg>:
         comment: トリのタマゴ
@@ -155,7 +156,7 @@ _route:
           - to: [-1414.625,1938.5]
           - to: [-1413.5,1966.375]
           - to: [-1435.5,1990.6875]
-    - _Chest<木の矢 x5>:
+    - _Chest<Arrow x5>:
         comment: 木の矢 x5
         movements:
           - to: [-1429.8125,2014.875]
@@ -175,7 +176,7 @@ _route:
           - to: [-1057.625,2212.125]
           - to: [-1046.125,2244.9375]
           - to: [-1032.5,2264.207997868213]
-    - _Chest<木の矢 x5>:
+    - _Chest<Arrow x5>:
         comment: 木の矢 x5
         movements:
           - to: [-1017.8125,2247.875]
@@ -321,7 +322,7 @@ _route:
           - to: [-2059,451.25]
           - to: [-2113.5625,440.0625]
     - _Material<Assorted Mushrooms>:
-        notes: Used for scrap item in glitch; hylian, sun, chill, zap, iron, razor, endura
+        notes: At least 2 of each for scrap item in glitch- hylian, sun, chill, zap, iron, razor, endura
         movements:
           - to: [-2182.59, 267.88, 777.82]
           - to: [-2180.89, 268.34, 788.19]
@@ -363,23 +364,23 @@ _route:
         movements:
           - to: [-2500.15, 306.68, 642.77]
           - to: [-2499.95, 306.74, 643.23]
-    - _Material<Endura Carrot>:
+    - _Material<Endura Carrot, 3>:
         comment: ガッツニンジン
         movements:
           - to: [-2490.08, 306.72, 624.37]
           - to: [-2482.24, 307.58, 620.67]
           - to: [-2476.06, 308.37, 622.18]
-    - _Material<Rushroom>:
+    - _Material<Rushroom, 1>:
         comment: ゴーゴーダケ
         movements:
           - to: [-2349.25, 355.64, 672.69]
     - _Chest<Forest Dweller's Bow>:
         coord: [-2342.64, 348.37, 680.81]
         comment: 森人の弓
-    - _Material<Acorn>:
+    - _Material<Acorn, 1>:
         comment: どんぐり
         coord: [-2338.68, 348.73, 678.83]
-    - _Material<Endura Carrot>:
+    - _Material<Endura Carrot, 4>:
         comment: ガッツニンジン
         movements:
           - to: [-2313.46, 416.73, 525.57]
@@ -393,7 +394,7 @@ _route:
     - _Shrine::MoggLatan:
         comment: モ・ラタニアの祠
         notes: Forest Dweller's Bow
-    - _Material<Hearty Durian>:
+    - _Material<Hearty Durian, 10>:
         comment: マックスドリアン
         movements:
           - to: [-2182.08, 410.76, 446.51]
@@ -406,8 +407,9 @@ _route:
           - to: [-2197.26, 409.66, 440.11]
           - to: [-2192.70, 410.24, 434.8]
           - to: [-2193.57, 409.69, 431.85]
-    - _Material<Wood>:
+    - _Material<Wood, 2>:
         comment: 薪の束
+        notes: At least 2, can be more.
         hide-icon-on-map: true
     - _Discover<Jeddo Bridge>:
         comment: ジェド橋
@@ -450,11 +452,9 @@ _route:
     - _Chest<Shock Arrow x5>:
         comment: 電気の矢 x5
         coord: [-666.04, 141.22, -571.08]
-    - _Cook<Hearty and Stamina Food>:
-        coord: [-413.80, 118.61, -754.63]
-        notes: Cook 5 Stamella Shrooms at a time; Endrua carrots 1 at a time; Durians 1 at a time (save one); Big Radish 1 at a time; Small Radish 2 at a time
     - Enter Castle:
         movements:
+          - to: [-413.80, 118.61, -754.63]
           - to: [-415.75,-769.25]
           - to: [-460.5,-808.3125]
           - to: [-473,-821.5625]
@@ -667,7 +667,12 @@ _route:
         notes: Shield of the Mind's Eye
     - _Equipment::Weapon<Torch>:
         comment: たいます
+        notes: Needed for blue flame after glitch
         coord: [1894.5,968.4948592662067]
+    - _Equipment::Weapon<Traveler's Sword>:
+        comment: 旅人の剣
+        notes: To take care of Nebb's first weapon before glitch
+        coord: [1931.10, 229.83, 987.25]
     - _Equipment::Weapon<Woodcutter's Axe>:
         comment: 木こりのオノ
         notes: Optional; A new axe for max arrows in glitch
@@ -1159,9 +1164,12 @@ _route:
     - _Cook<Hearty and Stam Food>:
         coord: [-3792.60, 267.34, -2319.19]
     - _Npc::Rito<Teba/テバ>:
-        icon: medoh-enter
         coord: [-3798.52, 267.35, -2314.14]
         comment: Divine Beast Vah Medoh/風の神獣 ヴァ・メドー
+    - Enter Medoh:
+        icon: medoh-enter
+        hide-icon-on-map: true
+        split-type: UserDefined
         notes: 2 body, 4 head
     - _Chest<Giant Ancient Core>:
         comment: 古代の巨大なコア
@@ -1171,6 +1179,7 @@ _route:
     - Revali's Gale:
         comment: 英傑リーバルの猛り
         icon: medoh-done
+        split-type: UserDefined
         movements:
           - to: [-3664.125,-1772.8125]
             warp: true
@@ -1381,10 +1390,6 @@ _route:
             away: true
     - _Korok::D58
     - _Korok::D57
-    - _Korok::F06
-    - _Korok::F09
-    - _Korok::F08
-    - _Korok::F12
 
   - Hestu 2:
     - _Warp::Shrine::KayaWan:
@@ -1511,12 +1516,16 @@ _route:
     - _Npc::Gerudo<Pokki/パクト>:
         comment: The Perfect Drink/うるわしの美酒を求めて・・・
         coord: [-2967.9375,3775.3125]
-    - Enter Naboris
+    - Enter Naboris:
+        icon: naboris-enter
+        hide-icon-on-map: true
+        split-type: UserDefined
     - _Snap::Quest<Small Guardian>:
         hide-icon-on-map: true
     - Urubosa's Fury:
         comment: 英傑ウルボザの怒り
         icon: naboris-done
+        split-type: UserDefined
         movements:
           - to: [-3780.875,2858.3125]
             warp: true
@@ -1851,12 +1860,15 @@ _route:
     - East Reservoir Lake/東の貯水湖:
         comment: Divine Beast Vah Ruta/水の神獣 ヴァ・ルッタ
         coord: [3596.0625,-342.875]
+    - Enter Ruta:
         icon: ruta-enter
+        split-type: UserDefined
     - _Material<Heart Vessel, 1>:
         hide-icon-on-map: true
     - Mipha's Grace:
         comment: 英傑ミファーの祈り
         icon: ruta-done
+        split-type: UserDefined
         movements:
           - to: [3284,-431.75]
             warp: true
@@ -2302,6 +2314,7 @@ _route:
         coord: [2152.1875,-2283.875]
     - Enter Rudania:
         icon: rudania-enter
+        split-type: UserDefined
         coord: [2261.25,-2385.5]
     - _Snap::Elite<Fireblight>:
         hide-icon-on-map: true
@@ -2310,6 +2323,7 @@ _route:
     - Daruk's Protection:
         comment: 英傑ダルケルの護り
         icon: rudania-done
+        split-type: UserDefined
         movements:
           - to: [1583.5625,-2426.6875]
             warp: true
@@ -2447,6 +2461,7 @@ _route:
     - _Equipment::Weapon<Master Sword>:
         comment: マスターソード
         coord: [431.5,-2111.0625]
+        split-type: UserDefined
 
   - Hyrule Castle:
     - _Warp::Tower::Woodland
@@ -2475,6 +2490,7 @@ _route:
     - Destory Ganon:
         icon: ganon
         hide-icon-on-map: true
+        split-type: UserDefined
     - _Chest::Special<Naydra Scale>:
         comment: ネルドラのウロコ
         coord: [-182.5625,-1169.4375]
@@ -3433,6 +3449,11 @@ _route:
     - _Korok::F17
     - _Korok::F20
     - _Korok::F11
+    - _Korok::F08
+    - _Korok::F12
+    - _Korok::F09
+    - _Korok::F06
+    - _Korok::F07
     - _Korok::F13
     - _Boss::Hinox::Black:
         comment: 黒ヒノックス
@@ -4255,7 +4276,6 @@ _route:
   - Eventide:
     - _Warp::Tower::Hateno:
          line-color: rgb(17, 85, 204)
-    - _Korok::F07
     - _Korok::F14
     - _Boss::Hinox::Red:
         comment: ヒノックス
