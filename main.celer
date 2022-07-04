@@ -36,64 +36,55 @@ _route:
     - _Equipment::Weapon<Woodcutter's Axe>:
         comment: 木こりのオノ
         coord: [-920.93, 220.65, 1871.83]
-    - _Material<Steak>:
-        coord: [-955.87, 237.42, 1948.86]
+    - _Material<Cooked Food>:
+        coord: [-830.51, 193.51, 1831.75]
+        notes: Breaking this barrel will give either Seared Steak or Roasted Bird Drumstick
     - (^=) Hard save
     - (==) Continue with the route as normal, but do not collect any of the following- Fire, Ice or Bomb Arrows, Korok Seeds.
-    - _Material<Food>:
-        hide-icon-on-map: true
-        notes: Pick up any food you feel you will need beyond what is required in the doc.
+    - (==) To save time later, pick up all materials in the order listed to avoid having to reorder the inventory before doing the glitch.
     - _Material<Arrow x5>:
         comment: 木の矢 x5
         movements: 
-          - to: [-931.75,1966.25]
-          - to: [-928.25,1974.8125]
-          - to: [-918.1875,1985.25]
-          - to: [-897.25,1986.1875]
-          - to: [-886.6875,1982.125]
-          - to: [-867.1875,1963.625]
-          - to: [-840.3125,1932.8125]
-          - to: [-793.48, 207.11, 1931.78]
-        notes: From pot
-    - _Material<Arrow x5>:
-        comment: 木の矢 x5
-        coord: [-821.73, 221.98, 1963.27]
+          - to: [-825.9375,1896.5625]
+          - to: [-831.625,1902.75]
+          - to: [-834.9375,1932.875]
+          - to: [-809.8125,1956.0625]
+          - to: [-812.1875,1966.75]
+          - to: [-821.73, 221.98, 1963.27]
         notes: From pot
     - _Chest<Traveler's Bow>:
         comment: 旅人の弓
         coord: [-832.43, 222.00, 1963.11]
-    - _Material<Boko Parts>:
-        coord: [-811.41, 221.27, 1958.06]
-        notes: Kill bokos along the way to get monster parts for cold protection elixr.
-    - _Material<Arrow>:
-        comment: 木の矢
+    - _Material<Arrow x5>:
+        comment: 木の矢 x5
         movements:
-          - to: [-654.10, 173.19, 1758.41]
-          - to: [-655.95, 172.50, 1752.48]
-          - to: [-653.35, 172.66, 1749.77]
-          - to: [-646.37, 171.54, 1752.77]
-          - to: [-647.00, 171.60, 1747.24]
-          - to: [-638.13, 172.13, 1741.13]
-          - to: [-638.70, 173.13, 1734.08]
-          - to: [-633.73, 172.33, 1745.03]
-          - to: [-626.51, 173.43, 1741.35]
-          - to: [-626.14, 173.33, 1739.76]
+          - to: [-812.1875,1966.75]
+          - to: [-793.48, 207.11, 1931.78]
+        notes: From pot
+    - _Material<Apple, 2>:
+        comment: リンゴ
+        movements:
+          - to: [-751.46, 192.27, 1783.57]
+          - to: [-751.49, 192.74, 1782.51]
+    - _Material<Hyrule Herb, 3>:
+        comment: ハイラル草
+        movements:
+          - to: [-752.63, 189.70, 1780.77]
+          - to: [-759.33, 188.15, 1756.76]
+          - to: [-758.83, 188.45, 1754.66]
+    - _Equipment::Weapon<Traveler's Sword>:
+        comment: 旅人の剣
+        notes: Needed for Nebb
+        coord: [-596.00, 172.51, 1702.50]
+    - _Equipment::Shield<Boko Shield>:
+        comment: ボコ盾
+        hide-icon-on-map: true
+    - _Material<Arrow x5>:
+        comment: 木の矢 x5
+        hide-icon-on-map: true
     - _Tower::GreatPlateau:
         comment: 始まりの塔
         notes: 1221
-    - _Material<Arrows from boko camp>:
-        movements:
-          - to: [-534.81, 169.37, 1633.95]
-          - to: [-536.61, 169.28, 1635.06]
-          - to: [-544.11, 169.29, 1630.71]
-          - to: [-546.15, 169.29, 1630.91]
-          - to: [-557.16, 171.73, 1619.73]
-          - to: [-559.09, 171.97, 1619.19]
-          - to: [-564.28, 172.13, 1610.52]
-          - to: [-566.23, 172.46, 1609.68]
-          - to: [-578.53, 174.64, 1608.78]
-          - to: [-579.88, 174.70, 1607.22]
-    - _Material<Collect 2-4 summerwing butterflies>
     - _Shrine::OmanAu:
         comment: マ・オーヌの祠
         notes: Traveler's Bow
@@ -111,36 +102,25 @@ _route:
     - _Material<Arrow x5>:
         coord: [-910.50, 181.70, 1671.30]
         comment: 木の矢 x5
-    - _Cook<Spicy Elixir>:
-        coord: [-901.50, 181.19, 1678.00]
-        notes: Cook 2 butterflies and boko parts starting with highest teir. Probably will need to cook 2 elixrs to make it through.
-        comment: ピリ辛薬
     - _Material<Flint>:
         comment: 火打ち石
         notes: Needed to make fire for Farosh farming.
         coord: [-954.90, 194.30, 1833.20]
-    - _Material<Bird Egg>:
-        comment: トリのタマゴ
-        coord: [-977.94, 197.51, 1724.73]
-    - _Material<Peppers and mushrooms>:
-        movements:
-          - to: [-1008,1661.25]
-          - to: [-1217.5,1570.25]
-          - to: [-1327.25,1519.25]
-          - to: [-1345,1516.5]
-          - to: [-1356.75,1518.5]
-          - to: [-1369.25,1520.25]
-          - to: [-1384,1526]
-          - to: [-1411.8125,1542.25]
-          - to: [-1442.25,1564.3125]
-          - to: [-1470.125,1597.25]
-          - to: [-1492.0625,1631.5625]
-          - to: [-1504.25,1634.3125]
-          - to: [-1506.25,1642.0625]
-          - to: [-1498.875,1646.5625]
-          - to: [-1448.75,1795.601779071787]
+    - _Warp::SOR
+    - _Material<Spicy Peppers, 9>:
         comment: ポカポカ草の実とタケ
-        notes: Underneath boko camp. Get Soldier's Broadsword if it's night and the boko has dropped it.
+        movements:
+          - to: [-1073.75,1793.25]
+          - to: [-1082.9375,1792.8125]
+          - to: [-1181.75,1819.625]
+          - to: [-1338.75,1757]
+          - to: [-1431.25,1736.25]
+          - to: [-1451.33, 253.43, 1786.23]
+          - to: [-1451.35, 253.39, 1782.85]
+          - to: [-1456.73, 253.47, 1782.48]
+        notes: Underneath boko camp. Get Soldier's Broadsword if it's night and the boko has dropped it. Kill Boko's so you can cook.
+    - _Cook<Cold Proection>:
+        coord: [-1461.76, 252.84, 1770.28]
     - _Shrine::KehNamut:
         comment: トゥミ・ンケの祠
         movements:
@@ -193,52 +173,21 @@ _route:
           - to: [-948.25,2277.5]
           - to: [-935,2304.4375]
           - to: [-924.6875,2320.5]
-    - _Chest<Traveler's Bow>:
-        coord: [-942,2328.729466273542]
-        comment: 旅人の弓
-    - _Equipment::Weapon<Woodcutter's Axe>:
-        comment: 木こりのオノ
+    - Movement to Ja Baij:
         movements:
-          - to: [-935,2304.4375]
-          - to: [-948.25,2277.5]
-          - to: [-952.875,2253.875]
-          - to: [-952.8125,2242.9375]
-          - to: [-989.4375,2173.5]
-          - to: [-988,2148.375]
-          - to: [-984.0625,2105.8125]
-          - to: [-999.625,2086.5625]
-          - to: [-1019.60, 252.10, 2044.00]
-    - _Material<Wood>:
-        comment: 薪の束
-        coord: [-1035.4375,2001.4345718263476]
-    - _Material<Spicy Pepper>:
-        coord: [-985.375,2008.8080237644672]
-        comment: ポカポカ草の実
-    - _Material<Spicy Pepper>:
-        coord: [-977.3125,2025.6810521762227]
-        comment: ポカポカ草の実
-    - _Equipment::Weapon<Soldier's Broadsword>:
-        comment: 兵士の剣
-        movements:
-          - to: [-943.5,2026.625]
-          - to: [-909.625,2048.75]
-          - to: [-884,2064.875]
-          - to: [-859.625,2090]
-          - to: [-832.875,2111.125]
-          - to: [-752,2082.75]
-          - to: [-603.5,1990.0625]
-          - to: [-587.375,1990.75]
-          - to: [-546.9375,1967.1875]
-          - to: [-521.4375,1968.875]
-          - to: [-468.375,1969.25]
-          - to: [-435.25,1968.9375]
-          - to: [-426.8125,1976.125]
-          - to: [-416.9375,1979.25]
-          - to: [-410.75,1980.4730987737303]
+          - to: [-913.3125,2318.5]
+          - to: [-891.0625,2305.25]
+          - to: [-870.625,2302.1875]
+          - to: [-541.25,2043.75]
+          - to: [-518.125,2041.5625]
+          - to: [-476.375,2026.5]
+          - to: [-468.5,2010.75]
     - _Shrine::JaBaij:
         comment: ジャ・バシフの祠
     - Paraglider:
         comment: パラセール
+        icon: king
+        split-type: UserDefined
         movements:
           - to: [-468.625,1968.9375]
           - to: [-521.625,1969]
@@ -256,31 +205,72 @@ _route:
           - to: [-820.25,2016.125]
           - to: [-813.25,1973.8125]
           - to: [-811.875,1966.7437858459407]
-    - _Chest<Soldier's Bow>:
-        comment: 兵士の弓
-        coord: [-814.8125,1964.7440195156587]
-    - _Warp::Shrine::KehNamut
-    - _Chest<Arrow x5>:
-        coord: [-1448.5,1795.7674960201257]
-        comment: 木の矢 x5
-    - _Chest<Arrow x5>:
-        coord: [-1433.875,1733.858993624326]
-        comment: 木の矢 x5
-        notes: On top of pillar
-    - _Chest<Arrow x10>:
-        coord: [-1265.375,1563.490594793856]
-        comment: 木の矢 x10
+    - _Warp::Shrine::OmanAu
+    - Travel to Outskirt Stable:
+        movements:
+          - to: [-690.5,1477.375]
+          - to: [-678.0625,1446.5]
+          - to: [-769,1436.5625]
+          - to: [-873.875,1446.375]
+          - to: [-929.5625,1446.375]
+          - to: [-949.75,1438.3125]
+          - to: [-998.0625,1455.125]
+          - to: [-1048.8125,1486.75]
+          - to: [-1081.8125,1509.625]
+          - to: [-1099.625,1517]
+          - to: [-1166.75,1507.5625]
+          - to: [-1232.125,1512.9375]
+          - to: [-1239.75,1511.1875]
+          - to: [-1256,1504.125]
+          - to: [-1306,1467.875]
+          - to: [-1326.6875,1450.9375]
+          - to: [-1353.3125,1424.625]
+          - to: [-1361.75,1404.9375]
+          - to: [-1375.9375,1383.4375]
+          - to: [-1372.4375,1358.5]
+          - to: [-1371,1351.9375]
+          - to: [-1374.625,1338.3125]
+          - to: [-1414.6875,1270.0625]
+    - _Chest<Silver Rupee>:
+        coord: [-1414.48, 136.96, 1248.51]
+        notes: Dog treasure; get rid of any remaining peppers
+        comment: 銀ルピー
+    - _Equipment::Weapon<Woodcutter's Axe>:
+        comment: 木こりのオノ​
+        notes: Pick up a new axe and don't use it. Needed for the glitch.
+        coord: [-1408.38, 139.90, 1248.54]
+    - _Discover<Outskirt Stable>:
+        comment: 平原外れの馬宿  
+        notes: Register Epona/Horse
+        coord: [-1449.5625,1269.0625]
     - _Discover<Rota Ooh>:
         comment: Activate only
         hide-icon-on-map: true
-        coord: [-1563.25,1310.5]
-    - _Chest<Silver Rupee>:
-        coord: [-1414.48, 136.96, 1248.51]
-        notes: Dog treasure
-        comment: 銀ルピー
+        movements:
+          - to: [-1432.5625,1249.5625]
+          - to: [-1459.6875,1221.9375]
+          - to: [-1489.5625,1215.375]
+          - to: [-1507.4375,1216.8125]
+          - to: [-1514.5625,1230.4375]
+          - to: [-1518.25,1244.875]
+          - to: [-1521.5625,1256.9375]
+          - to: [-1529.25,1264.3125]
+          - to: [-1540.375,1268.9375]
+          - to: [-1552.625,1285.5]
+          - to: [-1558.3125,1298.4375]
+          - to: [-1563.25,1310.5]
     - Travel to Satori Mountain:
         movements:
-          - to: [-1461,1221.3125]
+          - to: [-1563.25,1310.5]
+          - to: [-1558.3125,1298.4375]
+          - to: [-1552.625,1285.5]
+          - to: [-1540.375,1268.9375]
+          - to: [-1529.25,1264.3125]
+          - to: [-1521.5625,1256.9375]
+          - to: [-1518.25,1244.875]
+          - to: [-1514.5625,1230.4375]
+          - to: [-1507.4375,1216.8125]
+          - to: [-1489.5625,1215.375]
           - to: [-1471.6875,1194.75]
           - to: [-1474.75,1168.125]
           - to: [-1459.8125,1134.8125]
@@ -321,23 +311,51 @@ _route:
           - to: [-1994.1875,451.5]
           - to: [-2059,451.25]
           - to: [-2113.5625,440.0625]
-    - _Material<Assorted Mushrooms>:
-        notes: At least 2 of each for scrap item in glitch- hylian, sun, chill, zap, iron, razor, endura
+    - _Shrine::MoggLatan:
+        comment: モ・ラタニアの祠
+        notes: Forest Dweller's Bow
+    - _Material<Rushroom, 1>:
+        comment: ゴーゴーダケ
         movements:
-          - to: [-2182.59, 267.88, 777.82]
-          - to: [-2180.89, 268.34, 788.19]
-          - to: [-2186.22, 268.04, 790.92]
-          - to: [-2200.88, 267.79, 781.13]
+          - to: [-2349.25, 355.64, 672.69]
+    - _Chest<Forest Dweller's Bow>:
+        coord: [-2342.64, 348.37, 680.81]
+        comment: 森人の弓
+    - _Material<Sunshroom, 2>:
+        comment: ポカポカダケ
+        movements:
           - to: [-2201.58, 267.77, 780.34]
-          - to: [-2204.14, 267.82, 781.00]
-          - to: [-2205.54, 267.93, 781.57]
-          - to: [-2198.73, 267.95, 792.42]
+          - to: [-2200.88, 267.79, 781.13]
+    - _Material<Hylian Shroom, 2>:
+        comment: ハイラルダケ
+        movements:
+          - to: [-2195.27, 267.71, 781.08]
+          - to: [-2194.53, 267.80, 782.49]
+    - _Material<Zapshroom, 2>:
+        comment: ビリビリダケ
+        movements:
+          - to: [-2180.89, 268.34, 788.19]
           - to: [-2203.83, 267.93, 792.66]
+    - _Material<Ironshroom, 2>:
+        comment: ヨロイダケ
+        movements:
+          - to: [-2198.73, 267.95, 792.42]
+          - to: [-2217.69, 267.78, 805.82]
+    - _Material<Chillshrrom, 2>:
+        comment: ヒンヤリダケ
+        movements:
           - to: [-2194.23, 269.35, 811.83]
+          - to: [-2212.92, 268.31, 806.97]
+    - _Material<Razorshroom, 2>:
+        comment: ツルギダケ
+        movements:
           - to: [-2202.42, 269.17, 810.16]
           - to: [-2202.90, 269.03, 808.96]
-          - to: [-2212.92, 268.31, 806.97]
-          - to: [-2217.69, 267.78, 805.82]
+    - _Material<Endura Shroom, 2>:
+        comment: ガッツダケ
+        movements:
+          - to: [-2205.54, 267.93, 781.57]
+          - to: [-2204.14, 267.82, 781.00]
     - _Material<Ore Deposits>:
         notes: For backup flint
         movements:
@@ -349,7 +367,7 @@ _route:
     - _Material<Courser Bee Honey,2>:
         movements:
           - to: [-2469.11, 319.03, 746.31]
-          - to: [-2469.86, 320.38, 736.31]
+          - to: [-2514.73, 311.47, 713.41]
     - _Material<Silent Princess, 2>:
         movements:
           - to: [-2572.25, 307.25, 661.20]
@@ -370,47 +388,27 @@ _route:
           - to: [-2490.08, 306.72, 624.37]
           - to: [-2482.24, 307.58, 620.67]
           - to: [-2476.06, 308.37, 622.18]
-    - _Material<Rushroom, 1>:
-        comment: ゴーゴーダケ
+    - _Material<Silent Princess, 2>:
         movements:
-          - to: [-2349.25, 355.64, 672.69]
-    - _Chest<Forest Dweller's Bow>:
-        coord: [-2342.64, 348.37, 680.81]
-        comment: 森人の弓
+          - to: [-2441.99, 306.94, 601.02]
+          - to: [-2441.52, 307.03, 600.70]
     - _Material<Acorn, 1>:
         comment: どんぐり
-        coord: [-2338.68, 348.73, 678.83]
+        notes: Find an acorn or cut trees for RNG
+        hide-icon-on-map: true
+    - _Material<Wood, 2>:
+        comment: 薪の束
+        notes: At least 2, can be more. Drop and pick up if not at the end of inventory.
+        hide-icon-on-map: true
+    - _Warp::Shrine::MoggLatan
     - _Material<Endura Carrot, 4>:
         comment: ガッツニンジン
+        notes: Pick up the remainder of the items on Satori in this order
         movements:
           - to: [-2313.46, 416.73, 525.57]
           - to: [-2307.94, 416.75, 526.67]
           - to: [-2307.73, 416.78, 532.73]
           - to: [-2317.73, 416.74, 532.89]
-    - _Material<Silent Princess, 2>:
-        movements:
-          - to: [-2337.63, 440.84, 481.03]
-          - to: [-2337.35, 440.82, 481.58]
-    - _Shrine::MoggLatan:
-        comment: モ・ラタニアの祠
-        notes: Forest Dweller's Bow
-    - _Material<Hearty Durian, 10>:
-        comment: マックスドリアン
-        movements:
-          - to: [-2182.08, 410.76, 446.51]
-          - to: [-2183.84, 411.31, 443.98]
-          - to: [-2188.20, 410.71, 447.05]
-          - to: [-2190.36, 411.26, 449.25]
-          - to: [-2197.71, 410.77, 446.91]
-          - to: [-2195.89, 411.33, 444.43]
-          - to: [-2196.75, 410.21, 443.15]
-          - to: [-2197.26, 409.66, 440.11]
-          - to: [-2192.70, 410.24, 434.8]
-          - to: [-2193.57, 409.69, 431.85]
-    - _Material<Wood, 2>:
-        comment: 薪の束
-        notes: At least 2, can be more.
-        hide-icon-on-map: true
     - _Discover<Jeddo Bridge>:
         comment: ジェド橋
         movements:
@@ -464,6 +462,7 @@ _route:
           - to: [-462.8125,-946.25]
     - _Equipment::Weapon<Edge of Duality>:
         comment: 無心の大剣
+        notes: To sneak strike the black lizalfos in Faron.
         movements:
           - to: [-411.75,-966.0625]
           - to: [-413.25,-976.375]
@@ -482,7 +481,6 @@ _route:
     - _Equipment::Bow<Royal Guard's Bow>:
         comment: 近衛の弓
         coord: [-310.25, 261.03, -995.87]
-        notes: These weapons will be needed for Chass Qeta. Don't use them until then.
     - Observation Deck:
         movements:
           - to: [-342.5625,-997.0012664363721]
@@ -497,7 +495,7 @@ _route:
     - _Equipment::Bow<Royal Bow>:
         comment: 王家の弓
         coord: [-252.19, 210.48, -741.07]
-        notes: At this point you should have at least FDBx2, RGB, RB
+        notes: Don't use; At this point you should have at least FDBx2, RGB, RB
     - _Material<Arrow x5>:
         comment: 木の矢 x5
         coord: [-249.07, 209.78, -743.54]
@@ -507,6 +505,18 @@ _route:
           - to: [-101.50, 133.07, -416.50]
           - to: [-220.07, 126.78, -431.95]
           - to: [-254.50, 130.00, -334.40]
+    - _Material<Ancient Shaft, 2>:
+        comment: 古代のシャフト
+        hide-icon-on-map: true
+    - _Material<Ancient Spring, 2>:
+        comment: 古代のバネ
+        hide-icon-on-map: true
+    - _Material<Ancient Screw, 3>:
+        comment: 古代のネジ
+        hide-icon-on-map: true
+    - _Material<Ancient Core, 1>:
+        comment: 古代のコア
+        hide-icon-on-map: true
     - _Warp::Shrine::RotaOoh
     - Outskirt Stable:
         comment: 平原外れの馬宿
@@ -600,7 +610,7 @@ _route:
           - to: [789.25,197.3125]
     - _Shrine::KayaWan:
         comment: カヤ・ミワの祠
-        notes: Ancient Core
+        notes: Ancient Core, if needed
     - Visit grocery store:
         notes: Pick up anything needed for scrap
         movements:
@@ -647,7 +657,7 @@ _route:
         movements:
           - to: [1789,983.875]
           - to: [1800.25, 219.63, 1012.57]
-    - _Material<Energetic Rhino Beetle>:
+    - _Material<Energetic Rhino Beetle, 1>:
         comment: ガンバリカブト
         coord: [1811.23, 221.34, 1050.06]
     - Continue to Ta'loh Naeg:
@@ -664,14 +674,14 @@ _route:
           - to: [1841,891.25]
     - _Shrine::TalohNaeg:
         comment: タロ・ニヒの祠
-        notes: Shield of the Mind's Eye
+        notes: Shield of the Mind's Eye (Optional); Opal (Required)
     - _Equipment::Weapon<Torch>:
         comment: たいます
-        notes: Needed for blue flame after glitch
+        notes: Optional if you already have one; Needed for blue flame after glitch
         coord: [1894.5,968.4948592662067]
     - _Equipment::Weapon<Traveler's Sword>:
         comment: 旅人の剣
-        notes: To take care of Nebb's first weapon before glitch
+        notes: Optional if you already have one; To take care of Nebb's first weapon before glitch
         coord: [1931.10, 229.83, 987.25]
     - _Equipment::Weapon<Woodcutter's Axe>:
         comment: 木こりのオノ
@@ -757,7 +767,6 @@ _route:
           - to: [3284,2138.2807885959246]
     - _Shrine::MyahmAgana:
         comment: ミャマ・ガナの祠
-
     - Continue to Riola Spring:
         movements:
           - to: [3284,2138.2807885959246]
@@ -796,54 +805,79 @@ _route:
           - to: [2489.0625,2985.6875]
           - to: [2409.625,3006.75]
           - to: [2312.4375,3053.8125]
-          - to: [2261.5,3021.6875]
-          - to: [2203.4375,2966.4375]
-          - to: [2171.875,3013.8125]
-          - to: [2148.5625,3017.375]
-          - to: [2119.4375,2994.4375]
-          - to: [2020.75,2949.5625]
-          - to: [1918.75,2931.75]
-          - to: [1853.75,2896.0625]
-          - to: [1764.25,2884.75]
-          - to: [1731.5,2924.25]
-          - to: [1739.125,2969.75]
-          - to: [1750.25,3004.3125]
-    - _Material<Farosh Parts>:
+          - to: [2283.5,3050.8125]
+          - to: [2275.75,3060]
+          - to: [2270.1875,3068.9375]
+          - to: [2265.5,3083.125]
+          - to: [2248.375,3085.1875]
+          - to: [2234.6875,3085.3125]
+          - to: [2216.875,3092.3125]
+          - to: [2155.125,3101.625]
+          - to: [2098.25,3111.6875]
+          - to: [2071.9375,3098.5]
+          - to: [2052.5625,3082.4375]
+          - to: [2037.0625,3048]
+          - to: [2007.375,3004.5625]
+          - to: [1984.875,2962.9375]
+          - to: [1966.0625,2932.5]
+          - to: [1919.125,2925.6875]
+          - to: [1903.6875,2918.9375]
+          - to: [1886.9375,2912.25]
+          - to: [1871.5,2909.375]
+          - to: [1853.8125,2895.875]
+          - to: [1806.4375,2885.0625]
+    - _Chest<Shock Arrow x5>:
+        comment: 電気の矢 x5
+        coord: [1788.29, 340.12, 2946.85]
+    - _Chest<Phrenic Bow>:
+        comment: 一心の弓
+        coord: [1782.41, 340.07, 2950.61]
+    - _Chest<Arrow x10>:
+        comment: 木の矢 x10
+        coord: [1747.82, 341.89, 2940.17]
+    -  Farm Farosh Parts:
         notes: Scale, Horn, Claw
-    - _Cook<Stam Food>:
-        notes: Cook stamina food at stable to help get up cliffs. Save 4 endura carrots to dupe stam food.
+        coord: [1770.3125,2834.5625]
+    - _Material<Shard of Farosh's Horn>:
+        comment: フロドラの角のかけら
+        hide-icon-on-map: true
+    - _Material<Farosh's Scale>:
+        comment: フロドラのウロコ
+    - _Material<Farosh's Claw>:
+        comment: フロドラの爪
+    - Drop Endura Shroom, Farosh's Scale, Horn, Claw
+    - Pick up Farosh's Scale, Horn, Claw, Endura Shroom
+    - Throw away any Flint or Luminous Stones
+    - Movements to Lizalfos and Fish:
         movements:
-          - to: [1794.125,3130.3125]
-          - to: [1810.875,3162.0625]
-          - to: [1839.0625,3191.875]
-          - to: [1841.375,3304]
-          - to: [1825.5,3402.9375]
-          - to: [1802,3434.0625]
-          - to: [1738.0625,3467]
-          - to: [1664.8125,3481.5625]
-          - to: [1622.8125,3479.25]
-          - to: [1573.26, 165.96, 3530.55]
-    - Kill Blue Lizalfos:
-        movements:
-          - to: [1558,3595.25]
-          - to: [1562.375,3606.625]
-          - to: [1563.5625,3620.9375]
-          - to: [1562.625,3627.5]
-          - to: [1568.6875,3638.5]
-          - to: [1571.125,3642.25]
-          - to: [1570.9375,3649.5625]
-          - to: [1566.75,3683.5625]
-          - to: [1569.25,3711.375]
-          - to: [1634.50, 251.31, 3743.00]
-    - _Material<Lizalfos Parts>
+          - to: [1653.75,2981.75]
+          - to: [1597.625,3009.625]
+          - to: [1535.3125,3140.4375]
+          - to: [1438.9375,3480.9375]
+          - to: [1435.8125,3496.125]
+          - to: [1512.375,3550.875]
+          - to: [1543,3614.6875]
+          - to: [1543.3125,3621.6875]
+          - to: [1569.4375,3643.875]
+          - to: [1591.0625,3663.25]
+          - to: [1586.25,3665.5625]
+          - to: [1579.6875,3667.5]
+          - to: [1568.8125,3682.3125]
+          - to: [1567.1875,3696]
+          - to: [1572.1875,3703.625]
+          - to: [1585,3714.75]
     - Kill Black Lizalfos:
-       notes: Use Royal Guard's Bow; Do not pick up fire arrows
+       notes: Use Royal Guard's Bow or sneak strike; Do not pick up fire arrows
        movements:
          - to: [1632.5625,3708.75]
          - to: [1633.5,3701.625]
          - to: [1691.87, 280.72, 3661.50]
-    - _Material<Lizalfos Parts>:
-        notes: 1 Tail, 2 Horn, 2 Talon
+    - _Material<Lizalfos Tail, 1>:
+        comment: リザルフォスのしっぽ
+    - _Material<Lizalfos Horn, 2>:
+        comment: リザルフォスの角
+    - _Material<Lizalfos Talon, 2>:
+        comment: リザルフォスの爪
     - _Material<Hyrule Bass, 5>:
         coord: [1642.14, 278.15, 3676.26]
     - _Material<Hearty Bass, 1>
@@ -853,12 +887,138 @@ _route:
         comment: The Weapon Connoisseur/幼き武器マニア
         movements:
           - to: [3352.5,2138.5]
-    - _Shop<Perform The Glitch>:
-        coord: [3360.6875,2171.75]
-        notes: .link([Tutorial Here]https://docs.google.com/spreadsheets/d/1dXgHLQ7fWaNteE-fmqkrE4bJG2A_Q_ACwGVTg_tjWxA/edit?usp=sharing)
-    - _Material<Heart Vessel, 20>:
+
+  - Perform the Glitch:
+    - Start the glitch:
+        split-type: UserDefined
+        icon: link
         hide-icon-on-map: true
-    - _Material<Stamina Vessel, 10>:
+    - Drop and pick up Endura Shroom
+    - Weapons - Torch, Axe:
+        notes: Drop all weapons other than torch and axe. Make sure axe is unused and in slot 2.
+    - Bows - 2 x FDB, 2 x any bow:
+        notes: Must have only 4 bows, 2 must be FDB
+    - Shields - Only 1 shield:
+        notes: Must have at least 10 durability
+    - Armor - No armor:
+        notes: Must not have any armor in inventory
+    - Materials - Confirm the order:
+        notes: See this link for the order - 
+    - Food - No food:
+        notes: Eat any cooked food; must have no food in inventory
+    - Key Items - Sort:
+        notes: Sort key items so that spirit orbs are last
+    - Get autosave
+    - Load Plateau hard save
+    - Unequip weapon
+    - Drop shield:
+        notes: if one was picked up
+    - Get new autosave on Plateau:
+        notes: Run to SoR
+    - Load Hateno autosave
+    - (==) Avoid autosaves until finished with the glitch
+    - _Shop<Go to shop for slot breaking>:
+        coord: [3360.75,2171.75]
+    - Break 4 slots
+    - Drop+Pick up Acorn
+    - Dupe a FDB
+    - Break 4 more slots
+    - Drop+Pick up Farosh Horn
+    - Dupe another FDB:
+        notes: Optional; Keep the Royal Bow for 6000 Ancient Arrows
+    - Go to Goddess Statue:
+        coord: [3439.16, 236.02, 2098.46]
+        icon: link
+    - Drop Shaft, Spring
+    - Pickup Shaft
+    - Pickup Spring
+    - Drop+Pickup Lizalfos Horn, Talon
+    - Save+Reload
+    - Drop+Pick up top 5 slots:
+        notes: This combines the stacks and moves them to the end of the inventory
+    - Save+Reload
+    - Drop+Pick up top 4 slots
+    - Save+Reload
+    - Drop+Pick up top 2 slots
+    - Turn in 8 spirit orbs for 2 stamina vessels
+    - Save+Reload
+    - Turn in all spirit orbs for stamina then hearts:
+        notes: Should have 23 hearts at the end
+    - _Cook<Speed Food>:
+        notes: 4 Fleet-Lotus Seeds, Farosh Horn; if raining go to Link's cook pot
+        coord: [3446.07, 226.75, 2136.45]
+    - Drop+Pick up Springs
+    - Drop+Pick up Hyrule Bass
+    - Drop+Pick up Silent Princesses
+    - Drop+Pick up Farosh Horn
+    - Drop+Pick up Honey
+    - Save+Reload
+    - Drop+Pick up Springs
+    - Drop+Pick up Silent Princesses
+    - Drop+Pick up Farosh Horn, Honey
+    - Save+Reload
+    - Eat 1 speed food
+    - Drop+Pick up Farosh Horn
+    - Drop+Pick up Honey
+    - Drop+Pick up Hyrule Bass x 2:
+        notes: Both stacks at the beginning of the inventory
+    - Drop+Pick up Silent Princesses
+    - Drop+Pick up Endura Shroom, Farosh Claw
+    - Save+Reload
+    - Drop+Pick up Honey, Farosh Scale, Claw, Endura Shroom
+    - Drop+Pick up Ancient Screws, Endura Carrots
+    - Equip Weapon 2, Bow 4, Shield 1:
+        notes: Axe, unused FDB (or Royal Bow), Shield with at least 10 durability
+    - Save
+    - Load Plateau autosave
+    - Drop 3 weapons
+    - Eat 4 food
+    - Load Hateno hard save
+    - Save+Reload:
+        notes: Ancient Arrows and Ancient Cores should now be corrupted
+    - Equip Ancient Arrows
+    - _Shop<Go to shop>:
+        coord: [3360.75,2171.75]
+    - Drop 5 cores
+    - Sell remaining cores
+    - Pick up cores
+    - Save
+    - Load Plateau autosave
+    - Eat all 7 food
+    - Load Hateno hard save
+    - Shoot Ancient Arrow
+    - Save
+    - Load Plateau autosave
+    - Drop 2 weapons
+    - Eat 5 food
+    - Load Hateno hard save
+    - Shoot Ancient Arrow
+    - Save+Reload:
+        notes: Shock Arrows, Wood, Beetle, Opal, Lizalfos Tails, Hearty Bass should now be corrupted
+    - Buy a Bomb Arrow
+    - Equip Shock Arrows
+    - _Npc::SheikaMale<Bolson/サクラダ>:
+        comment: Hylian Homeowner/幸せを運ぶ匠
+        notes: Start the quest
+        coord: [3316.20, 235.52, 2302.53]    
+    - _Cook<4 Stamina Food>:
+        coord: [3333.19, 235.33, 2283.12]
+    - Save
+    - Load Plateau autosave
+    - Drop 5 weapons
+    - Eat 2 food
+    - Load Hateno hard save
+    - Shoot a Shock Arrow
+    - Save+Reload:
+        notes: Rushroom should now be corrupted
+    - Sort Key Items:
+        notes: If more speed/stam food is needed
+    - Save+Reload:
+        notes: Will give 4 speed food and 2 stamfood; If needed, repeat sort Key Items, Save+Reload up to 3 pages of cooked food.
+    - Close game
+    - Restart:
+        split-type: UserDefined
+        icon: link
         hide-icon-on-map: true
 
   - Hateno 1:
