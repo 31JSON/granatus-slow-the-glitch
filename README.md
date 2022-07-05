@@ -1,4 +1,8 @@
 # granatus-slow-the-glitch
+
+# Caution
+This route is in the process of being optimized and there are frequent changes.
+
 This is a route for the Breath of the Wild 100% speedrun, based on the original "Granatus" route by Johnnyboomr and updated and worked on by the speedrun community. It includes updates related to the major glitches: item duplcation, item transmutation, memory corruption.
 
 This version has been modified for using standard movements (no movement-based glitches such as windbomb, BLSS, or BTB). The route is intended to prioritize the reduction of difficulty, and makes the following assumptions:
@@ -15,3 +19,6 @@ The fury routing is at the runner's discression. The originial routing that was 
 You can view the route at https://celer.itntpiston.app/#/gh/31PNMR/granatus-slow-the-glitch
 
 You can see more about the route engine at https://github.com/iTNTPiston/celer
+
+# Credits
+Thanks to zd3nik and savage for helping with editing and error checking.
