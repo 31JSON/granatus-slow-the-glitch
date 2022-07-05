@@ -1120,9 +1120,33 @@ _route:
     - _Npc::SheikaMale<Hudson/エノキダ>:
         comment: From the Ground Up/羽ばたけ！サクラダ工務店
         hide-icon-on-map: true
-    - _Npc<Horned Statue/悪魔像>:
-        comment: The Statue's Bargain/器の操者
-        coord: [3285.375,2197.5]
+    - _Korok::N59
+    - _Korok::N58
+    - _Korok::N50
+    - _Korok::N49
+    - Continue to Hateno Tower:
+        movements:
+          - to: [2652.75,2262.25]
+          - to: [2637.75,2244.25]
+          - to: [2616.25,2168.75]
+          - to: [2637.5,2148.25]
+          - to: [2671.5,2130.5]
+          - to: [2688.75,2145]
+          - to: [2712.75,2149]
+          - to: [2735,2149.5]
+    - _Tower::Hateno:
+        comment: ハテノ塔
+    - _Korok::D53:
+        comment: Drown
+        movements:
+          - to: [2485.75,2104]
+            away: true
+    - _Chest<Fire Arrow x5>:
+        comment: 炎の矢 x5
+        coord: [2490.57, 212.29, 2245.82]
+    - _Korok::D58
+    - _Korok::D57
+
   - Medoh:
     - _Warp::Shrine::RotaOoh:
         line-color: rgb(0, 128, 0)
@@ -1324,6 +1348,8 @@ _route:
     - _Npc::Rito<Saki/サキ>:
         comment: Divine Beast Vah Medoh/風の神獣 ヴァ・メドー
         coord: [-3606.625,-1822.9375]
+    - _Shrine::ShaWarvo:
+        comment: シャ・タワの祠
     - _Korok::T02
     - _Equipment::Bow<Swallow Bow>:
         comment: ツバメの弓
@@ -1533,32 +1559,7 @@ _route:
         comment: Drown
     - _Korok::D19
     - _Warp::Shrine::MyahmAgana
-    - _Korok::N59
-    - _Korok::N58
-    - _Korok::N50
-    - _Korok::N49
-    - Continue to Hateno Tower:
-        movements:
-          - to: [2652.75,2262.25]
-          - to: [2637.75,2244.25]
-          - to: [2616.25,2168.75]
-          - to: [2637.5,2148.25]
-          - to: [2671.5,2130.5]
-          - to: [2688.75,2145]
-          - to: [2712.75,2149]
-          - to: [2735,2149.5]
-    - _Tower::Hateno:
-        comment: ハテノ塔
-    - _Korok::D53:
-        comment: Drown
-        movements:
-          - to: [2485.75,2104]
-            away: true
-    - _Chest<Fire Arrow x5>:
-        comment: 炎の矢 x5
-        coord: [2490.57, 212.29, 2245.82]
-    - _Korok::D58
-    - _Korok::D57
+
 
   - Hestu 2:
     - _Warp::Shrine::KayaWan:
@@ -2172,6 +2173,8 @@ _route:
         hide-icon-on-map: true
 
   - Enter Goron City:
+    - _Korok::A34
+    - _Korok::A38
     - _Discover<Great Fairy Fountain>:
         comment: 大妖精の泉
         coord: [4111.4375,-1378.3125]
@@ -2223,9 +2226,6 @@ _route:
     - .fury():
         fury: 3
     - _Korok::E26
-    - _Memory::EldinCanyon:
-        comment: 予兆
-    - _Korok::E31
     - _Korok::E24
     - _Korok::E25
     - _Npc::SheikaMale<Kima/マサーキィ>:
@@ -2545,6 +2545,9 @@ _route:
     - _Korok::E28
     - _Shrine::QuaRaym:
         comment: キュ・ラムヒの祠
+    - _Memory::EldinCanyon:
+        comment: 予兆
+    - _Korok::E31
     - _Korok::E35
     - _Korok::K32
     - _Discover<Military Training Camp>:
@@ -3690,7 +3693,6 @@ _route:
     - _Npc::SheikaMale<Hudson/エノキダ>:
         comment: From the Ground Up/羽ばたけ！サクラダ工務店
         coord: [3983.9375,-1600.9375]
-    - _Korok::A38
 
   - Letter Quest:
     - Line color Red
@@ -4198,8 +4200,6 @@ _route:
     - _Korok::T12
     - _Korok::T09
     - _Korok::T04
-    - _Shrine::ShaWarvo:
-        comment: シャ・タワの祠
     - _Discover<Hebra Trailhead Lodge>:
         comment: ヘブラ山脈登山口の小屋
         coord: [-3572.75,-2275.625]
@@ -4429,7 +4429,6 @@ _route:
     - _Npc::SheikaMale<Hudson/エノキダ>:
         comment: From the Ground Up/羽ばたけ！サクラダ工務店
         coord: [3970.74, 233.60, -1623.47]
-    - _Korok::A34
     - _Korok::A44
     - _Korok::A35
     - _Korok::A36
@@ -4652,6 +4651,9 @@ _route:
     - _Korok::N46
     - _Korok::N51
     - _Korok::N52
+    - _Npc<Horned Statue/悪魔像>:
+        comment: The Statue's Bargain/器の操者
+        coord: [3285.375,2197.5]
     - _Korok::N53
     - _Npc::SheikaMale<Bolson/サクラダ>:
         comment: From the Ground Up/羽ばたけ！サクラダ工務店
