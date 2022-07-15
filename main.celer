@@ -2,10 +2,10 @@
 _project:
   authors:
     - 31PNMR
-  description: Hundo slow with duplication/the glitch/transmutation
-  name: Granatas Slow The Glitch
+  description: Hundo Movement Glitch Restricted with IST and DIC
+  name: Hundo MGR IST DIC
   url: ""
-  version: 0.1.0
+  version: 1.1.0
 _route:
   - (==) The Glitch
 
@@ -36,18 +36,25 @@ _route:
     - _Equipment::Weapon<Woodcutter's Axe>:
         comment: 木こりのオノ
         coord: [-920.93, 220.65, 1871.83]
-    - _Material<Cooked Food>:
-        coord: [-830.51, 193.51, 1831.75]
-        notes: Breaking this barrel will give either Seared Steak or Roasted Bird Drumstick
+    - _Material<Seared Steak>:
+        coord: [-955.87, 237.42, 1948.86]
     - (^=) Hard save
     - (==) Continue with the route as normal, but do not collect any of the following- Fire, Ice or Bomb Arrows, Korok Seeds.
     - (==) To save time later, pick up all materials in the order listed to avoid having to reorder the inventory before doing the glitch.
+    - _Material<Spicy Peppers, 6>:
+        comment: ポカポカ草の実
+        movements:
+          - to: [-964.50, 238.84, 1953.28]
+          - to: [-964.15, 238.61, 1953.45]
+          - to: [-964.52, 238.68, 1953.66]
+          - to: [-965.66, 238.75, 1956.51]
+          - to: [-965.30, 238.52, 1956.67]
+          - to: [-965.68, 238.59, 1956.89]
     - _Material<Arrow x5>:
         comment: 木の矢 x5
         movements: 
-          - to: [-825.9375,1896.5625]
-          - to: [-831.625,1902.75]
-          - to: [-834.9375,1932.875]
+          - to: [-917.25,1985.4375]
+          - to: [-894.9375,1986]
           - to: [-809.8125,1956.0625]
           - to: [-812.1875,1966.75]
           - to: [-821.73, 221.98, 1963.27]
@@ -93,6 +100,11 @@ _route:
           - to: [-671.81, 171.64, 1525.14]
           - to: [-702.18, 171.71, 1535.47]
           - to: [-704.23, 171.71, 1534.71]
+    - _Material<Bird Egg>:
+        comment: トリのタマゴ
+        movements:
+          - to: [-851.94, 195.62, 1678.14]
+          - to: [-851.77, 195.66, 1678.21]
     - _Material<Arrow x5>:
         coord: [-899.80, 181.59, 1671.50]
         comment: 木の矢 x5
@@ -102,29 +114,23 @@ _route:
     - _Material<Arrow x5>:
         coord: [-910.50, 181.70, 1671.30]
         comment: 木の矢 x5
+    - _Cook<Cold Protection>:
+        coord: [-901.50, 181.19, 1678.00]
+        notes: 3 Spicy Peppers, 2 Bird Eggs
     - _Material<Flint>:
         comment: 火打ち石
         notes: Needed to make fire for Farosh farming.
         coord: [-954.90, 194.30, 1833.20]
     - _Warp::SOR
-    - _Material<Spicy Peppers, 9>:
-        comment: ポカポカ草の実とタケ
-        movements:
-          - to: [-1073.75,1793.25]
-          - to: [-1082.9375,1792.8125]
-          - to: [-1181.75,1819.625]
-          - to: [-1338.75,1757]
-          - to: [-1431.25,1736.25]
-          - to: [-1451.33, 253.43, 1786.23]
-          - to: [-1451.35, 253.39, 1782.85]
-          - to: [-1456.73, 253.47, 1782.48]
-        notes: Underneath boko camp. Get Soldier's Broadsword if it's night and the boko has dropped it. Kill Boko's so you can cook.
-    - _Cook<Cold Proection>:
-        coord: [-1461.76, 252.84, 1770.28]
     - _Shrine::KehNamut:
         comment: トゥミ・ンケの祠
         movements:
-          - to: [-1401,1795.75]
+          - to: [-1054.875,1818.625]
+          - to: [-1072.875,1792.75]
+          - to: [-1084.125,1792.5]
+          - to: [-1156.5,1816.375]
+          - to: [-1243.125,1791.125]
+          - to: [-1351.25,1762]
           - to: [-1369.5,1810.75]
           - to: [-1376.625,1834.3125]
           - to: [-1385.4375,1865.1875]
@@ -321,6 +327,9 @@ _route:
     - _Chest<Forest Dweller's Bow>:
         coord: [-2342.64, 348.37, 680.81]
         comment: 森人の弓
+    - _Material<Acorn, 1>:
+        comment: どんぐり
+        coord: [-2338.68, 348.73, 678.83]
     - _Material<Sunshroom, 2>:
         comment: ポカポカダケ
         movements:
@@ -392,23 +401,15 @@ _route:
         movements:
           - to: [-2441.99, 306.94, 601.02]
           - to: [-2441.52, 307.03, 600.70]
-    - _Material<Acorn, 1>:
-        comment: どんぐり
-        notes: Find an acorn or cut trees for RNG
-        hide-icon-on-map: true
+    - _Warp::Shrine::MoggLatan
+    - _Material<Hearty Durian>:
+        comment: マックスドリアン
+        movements:
+          - to: [-2195.89, 411.33, 444.43]
     - _Material<Wood, 2>:
         comment: 薪の束
         notes: At least 2, can be more. Drop and pick up if not at the end of inventory.
         hide-icon-on-map: true
-    - _Warp::Shrine::MoggLatan
-    - _Material<Endura Carrot, 4>:
-        comment: ガッツニンジン
-        notes: Pick up the remainder of the items on Satori in this order
-        movements:
-          - to: [-2313.46, 416.73, 525.57]
-          - to: [-2307.94, 416.75, 526.67]
-          - to: [-2307.73, 416.78, 532.73]
-          - to: [-2317.73, 416.74, 532.89]
     - _Discover<Jeddo Bridge>:
         comment: ジェド橋
         movements:
@@ -836,24 +837,23 @@ _route:
     - _Chest<Shock Arrow x5>:
         comment: 電気の矢 x5
         coord: [1788.29, 340.12, 2946.85]
-    - _Chest<Phrenic Bow>:
-        comment: 一心の弓
-        coord: [1782.41, 340.07, 2950.61]
+        notes: If needed
     - _Chest<Arrow x10>:
         comment: 木の矢 x10
         coord: [1747.82, 341.89, 2940.17]
+        notes: If needed
     -  Farm Farosh Parts:
         notes: Scale, Horn, Claw
         coord: [1770.3125,2834.5625]
+    - _Material<Farosh's Scale>:
+        comment: フロドラのウロコ
     - _Material<Shard of Farosh's Horn>:
         comment: フロドラの角のかけら
         hide-icon-on-map: true
-    - _Material<Farosh's Scale>:
-        comment: フロドラのウロコ
     - _Material<Farosh's Claw>:
         comment: フロドラの爪
-    - Drop Endura Shroom, Farosh's Scale, Horn, Claw
-    - Pick up Farosh's Scale, Horn, Claw, Endura Shroom
+    - Drop Endura Carrot, Farosh's Scale, Horn, Claw
+    - Pick up Farosh's Scale, Horn, Claw, Endura Carrot
     - Throw away any Flint or Luminous Stones
     - Movements to Lizalfos and Fish:
         movements:
@@ -886,8 +886,10 @@ _route:
     - _Material<Lizalfos Talon, 2>:
         comment: リザルフォスの爪
     - _Material<Hyrule Bass, 5>:
+        comment: ハイラルバス
         coord: [1642.14, 278.15, 3676.26]
-    - _Material<Hearty Bass, 1>
+    - _Material<Hearty Bass, 1>:
+        comment: マックスバス
     - _Warp::Shrine::MyahmAgana
     - _Npc::SheikaMale<Nebb/ナブ>:
         notes: Show him the Traveler's Sword so you can get it out of your inventory.
@@ -900,7 +902,6 @@ _route:
         split-type: UserDefined
         icon: link
         hide-icon-on-map: true
-    - Drop and pick up Endura Shroom
     - Weapons - Torch, Axe:
         notes: Drop all weapons other than torch and axe. Make sure axe is unused and in slot 2.
     - Bows - 2 x FDB, 2 x any bow:
@@ -984,6 +985,10 @@ _route:
     - Save+Reload:
         notes: Ancient Arrows and Ancient Cores should now be corrupted
     - Equip Ancient Arrows
+    - _Npc::SheikaFemale<Clavia/クレーヴィア>:
+        comment: Secret of the Cedars/三本杉の秘密
+        coord: [3434.875,2149.1875]
+        notes: If raining, talk to her at the end of the run
     - _Shop<Go to shop>:
         coord: [3360.75,2171.75]
     - Drop 5 cores
@@ -1022,6 +1027,7 @@ _route:
         notes: If more speed/stam food is needed
     - Save+Reload:
         notes: Will give 4 speed food and 2 stamfood; If needed, repeat sort Key Items, Save+Reload up to 3 pages of cooked food.
+    - Final save
     - Close game
     - Restart:
         split-type: UserDefined
@@ -1171,6 +1177,9 @@ _route:
         comment: テリー
         notes: Buy grasshoppers
         coord: [-1421.55, 137.73, 1280.33]
+    - _Shop<Botrick>:
+        comment: ウドー
+        notes: Buy Fire Arrows
     - _Discover<Tabantha Bridge Stable>:
         comment: タバンタ大橋馬宿
         movements:
@@ -1399,12 +1408,12 @@ _route:
   - Kakariko 2:
     - _Warp::Tower::GreatPlateau:
         line-color: rgb(163, 73, 46)
-    - _Discover<Outpost Ruins>:
-        comment: ハイラル宿場町 跡地
-        coord: [-246.6875,1675.3125]
     - _Chest<Fire Arrow x5>:
        comment: 炎の矢 x5
        coord: [-285.04, 157.09, 1585.50]
+    - _Discover<Outpost Ruins>:
+        comment: ハイラル宿場町 跡地
+        coord: [-246.6875,1675.3125]
     - _Warp::Shrine::WahgoKatta
     - _Shrine::WahgoKatta:
         comment: ワゴ・カタの祠
@@ -1421,6 +1430,9 @@ _route:
         coord: [324.66, 115.40, 1089.03]
         notes: Buy electric darner
     - _Warp::Shrine::KayaWan
+    - _Shop<Beedle/テリー>:
+        coord: [890.25, 131.28, 157.06]
+        notes: Buy Smotherwing Butterflies
     - _Shrine::DakaTuss:
         comment: ダタ・クスの祠
     - Ride to Kakariko:
@@ -1653,9 +1665,8 @@ _route:
         movements:
           - to: [-3857.25,2913.6875]
     - Duplicate GEB
-    - Transmute 15 electric keese wings, 9 keese wings
-    - _Cook<All food>:
-        coord: [-3834.92, 148.98, 2946.04]
+    - Transmute 15 electric keese wings, 9 keese wings:
+        notes: Only if getting Climber's Set
     - _Npc::Gerudo<Riju/ルージュ>:
         comment: Vah Naboris Main Quest/雷の神獣 ヴァ・ナボリス
         coord: [-3891.37, 157.48, 2968.35]
@@ -4667,6 +4678,7 @@ _route:
     - _Npc::SheikaFemale<Clavia/クレーヴィア>:
         comment: Secret of the Cedars/三本杉の秘密
         coord: [3434.875,2149.1875]
+        notes: If needed
     - _Npc::SheikaMale<Manny/マンサク>:
         comment: A Gift for My Beloved/愛しの人が望む物
         coord: [3445.6875,2121.25]
